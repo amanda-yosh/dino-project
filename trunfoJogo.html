@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animais Extintos - Super Trunfo</title>
+
+    <link rel="stylesheet" href="./css/global.css" />
+    <link rel="stylesheet" href="./css/trunfoJogo.css" />
+  </head>
+  <body>
+    <nav class="menu">
+      <ul>
+        <li><a href="#dinossauros">Dinossauros</a></li>
+        <li><a href="#faq">Faq</a></li>
+        <li><a href="#contato">Contato</a></li>
+        <li><a href="./trunfoJogo.html">Jogo</a></li>
+        <li><a href="#dev">Dev →</a></li>
+      </ul>
+    </nav>
+
+    <section class="grid-section animais" id="dinossauros">
+      <h1 class="titulo">Super Trunfo</h1>
+
+      <div class="container">
+        <img src="" class="page-logo" alt="" />
+        <button onclick="sortearCarta()" id="btnSortear">
+          Sorteie sua carta
+        </button>
+
+        <form id="form">
+          <h2>Escolha o seu atributo</h2>
+          <div class="wrapper">
+            <div>
+              <div id="carta-jogador">
+                <img
+                  src="https://www.alura.com.br/assets/img/imersoes/dev-2021/card-super-trunfo-transparent-ajustado.png"
+                  style="width: inherit; height: inherit; position: absolute"
+                />
+                <h3></h3>
+              </div>
+            </div>
+            <div>
+              <div id="carta-maquina" class="carta">
+                <img
+                  src="https://www.alura.com.br/assets/img/imersoes/dev-2021/card-super-trunfo-transparent-ajustado.png"
+                  style="width: inherit; height: inherit; position: absolute"
+                />
+              </div>
+            </div>
+          </div>
+          <button
+            class="button-jogar"
+            type="button"
+            id="btnJogar"
+            onclick="jogar()"
+            disabled="false"
+          >
+            Jogar
+          </button>
+          <div id="resultado"></div>
+        </form>
+      </div>
+
+    <script src="/trunfoJogo.js"></script>
+  </body>
+</html>
